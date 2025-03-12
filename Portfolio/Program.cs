@@ -19,6 +19,8 @@ builder.Services.AddSwaggerGen();
 //Services
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
+builder.Services.AddScoped<IProjectService, ProjectService>();
 
 //connect Sqlserver
 builder.Services.AddDbContext<PortfolioDbContext>(options =>

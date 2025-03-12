@@ -11,6 +11,11 @@ namespace Portfolio.Models
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<UserDevice> UserDevices { get; set; }
         public DbSet<RefreshToken> RefreshTokens { get; set; }
+        public DbSet<Skill> Skills { get; set; }
+        public DbSet<Education> Educations { get; set; }
+        public DbSet<Experience> Experiences { get; set; }
+        public DbSet<CategorySkill> CategorySkills { get; set; }
+
         public PortfolioDbContext(DbContextOptions<PortfolioDbContext> options) : base(options)
         {
         }

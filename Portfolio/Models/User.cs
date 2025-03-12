@@ -27,5 +27,9 @@ namespace Portfolio.Models
         [MaxLength(20, ErrorMessage = "Role cannot be longer than 20 characters")]
         public string? Role { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        public ICollection<Skill>? Skills { get; set; }
+        public ICollection<Education>? Educations { get; set; }
+        public ICollection<Experience>? Experiences { get; set; }
     }
 }
